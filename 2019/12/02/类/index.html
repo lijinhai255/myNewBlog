@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Class | 阿海blog</title>
+    <meta name="description" content="博客日志">
+    
+    
+    <link rel="preload" href="/myNewBlog/assets/css/0.styles.38b4f049.css" as="style"><link rel="preload" href="/myNewBlog/assets/js/app.ea81de50.js" as="script"><link rel="preload" href="/myNewBlog/assets/js/7.7a14a471.js" as="script"><link rel="preload" href="/myNewBlog/assets/js/5.ea7f276a.js" as="script"><link rel="preload" href="/myNewBlog/assets/js/26.ecf5eee9.js" as="script"><link rel="prefetch" href="/myNewBlog/assets/js/10.e6be6426.js"><link rel="prefetch" href="/myNewBlog/assets/js/11.a4e69017.js"><link rel="prefetch" href="/myNewBlog/assets/js/12.bcef6220.js"><link rel="prefetch" href="/myNewBlog/assets/js/13.4246c915.js"><link rel="prefetch" href="/myNewBlog/assets/js/14.6037e47c.js"><link rel="prefetch" href="/myNewBlog/assets/js/15.db45d848.js"><link rel="prefetch" href="/myNewBlog/assets/js/16.a9c9e634.js"><link rel="prefetch" href="/myNewBlog/assets/js/17.c55212b0.js"><link rel="prefetch" href="/myNewBlog/assets/js/18.1e34379c.js"><link rel="prefetch" href="/myNewBlog/assets/js/19.ff79592e.js"><link rel="prefetch" href="/myNewBlog/assets/js/20.7f430f13.js"><link rel="prefetch" href="/myNewBlog/assets/js/21.d0bf949c.js"><link rel="prefetch" href="/myNewBlog/assets/js/22.2575b6a0.js"><link rel="prefetch" href="/myNewBlog/assets/js/23.8e985822.js"><link rel="prefetch" href="/myNewBlog/assets/js/24.77db26d3.js"><link rel="prefetch" href="/myNewBlog/assets/js/25.ed12f7b1.js"><link rel="prefetch" href="/myNewBlog/assets/js/27.3ba5fd98.js"><link rel="prefetch" href="/myNewBlog/assets/js/28.ca77a843.js"><link rel="prefetch" href="/myNewBlog/assets/js/29.35363513.js"><link rel="prefetch" href="/myNewBlog/assets/js/3.5e3faf72.js"><link rel="prefetch" href="/myNewBlog/assets/js/30.bc39ef42.js"><link rel="prefetch" href="/myNewBlog/assets/js/31.c6909c64.js"><link rel="prefetch" href="/myNewBlog/assets/js/4.cad130af.js"><link rel="prefetch" href="/myNewBlog/assets/js/6.5b2dd521.js"><link rel="prefetch" href="/myNewBlog/assets/js/8.d0a76593.js"><link rel="prefetch" href="/myNewBlog/assets/js/9.8749201d.js"><link rel="prefetch" href="/myNewBlog/assets/js/vuejs-paginate.45d6a308.js">
+    <link rel="stylesheet" href="/myNewBlog/assets/css/0.styles.38b4f049.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuperess-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/myNewBlog/myNewBlog/" class="nav-link home-link">阿海blog
+        </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/myNewBlog/" class="nav-link">Blog</a></li><li class="nav-item"><a href="/myNewBlog/tag/" class="nav-link">Tags</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div></div></header> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/myNewBlog/myNewBlog/" class="nav-link mobile-home-link">阿海blog
+      </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/myNewBlog/" class="nav-link">Blog</a></li><li class="mobile-nav-item"><a href="/myNewBlog/tag/" class="nav-link">Tags</a></li></ul></div></div></div></section> <div class="content-wrapper"><div id="vuperess-theme-blog__post-layout"><div class="vuepress-blog-theme-content content__default"><h1 id="class"><a href="#class" aria-hidden="true" class="header-anchor">#</a> Class</h1> <blockquote><p>Javascript是一种基于对象（object-based）的语言，你遇到的所有东西几乎都是对象。但是，它又不是一种真正的面向对象编程（OOP）语言，因为它的语法中没有class（类）。</p></blockquote> <h2 id="intro"><a href="#intro" aria-hidden="true" class="header-anchor">#</a> Intro</h2> <p>对于面向对象编程而言，更关注类的声明、属性、方法、静态方法、继承、多态、私有属性。</p> <h2 id="basic-syntax"><a href="#basic-syntax" aria-hidden="true" class="header-anchor">#</a> Basic Syntax</h2> <p>首先我们要先来说明在 JavaScript 世界里如何声明一个 “类”。在 ES6 之前大家都是这么做的：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> <span class="token function-variable function">Animal</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">type</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>type <span class="token operator">=</span> type
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function-variable function">walk</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">I am walking</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> dog <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Animal</span><span class="token punctuation">(</span><span class="token string">'dog'</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> monkey <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Animal</span><span class="token punctuation">(</span><span class="token string">'monkey'</span><span class="token punctuation">)</span>
+
+</code></pre></div><p>在上述代码中，我们定义了一个叫 Animal 的类，类中声明了一个属性 type、一个方法 walk；然后通过 new Animal 这个类生成实例，完成了类的定义和实例化。当然你也可以这样写：</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> <span class="token function-variable function">Animal</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">type</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>type <span class="token operator">=</span> type
+<span class="token punctuation">}</span>
+
+<span class="token class-name">Animal</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">walk</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">I am walking</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> dog <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Animal</span><span class="token punctuation">(</span><span class="token string">'dog'</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> monkey <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Animal</span><span class="token punctuation">(</span><span class="token string">'monkey'</span><span class="token punctuation">)</span>
+</code></pre></div><p>在 ES6 中把类的声明专业化了，不在用 function 的方式了，请看：</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code><span class="token keyword">class</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span> <span class="token punctuation">(</span><span class="token parameter">type</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>type <span class="token operator">=</span> type
+  <span class="token punctuation">}</span>
+  <span class="token function">walk</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">I am walking</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> dog <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Animal</span><span class="token punctuation">(</span><span class="token string">'dog'</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> monkey <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Animal</span><span class="token punctuation">(</span><span class="token string">'monkey'</span><span class="token punctuation">)</span>
+</code></pre></div><p>很明显，从定义上就很专业了，有构造函数、方法，但是 ES6 增加了新的数据类型 class 吗？</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> Animal<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//function</span>
+</code></pre></div><p>可以发现 class 的类型还是 function，和 ES5 貌似并没有什么区别，那么 class 中定义的方法在哪呢？我们知道只要是函数，就一定会有 prototype 对象。那么类的方法和 prototype 对象有什么关系呢？</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token class-name">Animal</span><span class="token punctuation">.</span>prototype<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// {constructor: ƒ, walk: ƒ}</span>
+<span class="token comment">//   constructor: class Animal</span>
+<span class="token comment">//   walk: ƒ walk()</span>
+<span class="token comment">//   __proto__:</span>
+<span class="token comment">//   constructor: ƒ Object()</span>
+<span class="token comment">//   hasOwnProperty: ƒ hasOwnProperty()</span>
+<span class="token comment">//   isPrototypeOf: ƒ isPrototypeOf()</span>
+<span class="token comment">//   propertyIsEnumerable: ƒ propertyIsEnumerable()</span>
+<span class="token comment">//   toLocaleString: ƒ toLocaleString()</span>
+<span class="token comment">//   toString: ƒ toString()</span>
+<span class="token comment">//   valueOf: ƒ valueOf()</span>
+<span class="token comment">//   __defineGetter__: ƒ __defineGetter__()</span>
+<span class="token comment">//   __defineSetter__: ƒ __defineSetter__()</span>
+<span class="token comment">//   __lookupGetter__: ƒ __lookupGetter__()</span>
+<span class="token comment">//   __lookupSetter__: ƒ __lookupSetter__()</span>
+<span class="token comment">//   get __proto__: ƒ __proto__()</span>
+<span class="token comment">//   set __proto__: ƒ __proto__()</span>
+</code></pre></div><p>可以看出在 Animal.prototype 对象上有两个方法，一个是构造函数（constructor）、一个是自定义的方法（walk）。这是不是和 ES5 的第二种写法一模一样？我们再来看下属性，在 ES5 中有个 API 用来判断对象的自有属性（hasOwnProperty）。</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>dog<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span><span class="token string">'type'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//true</span>
+</code></pre></div><p>这个表现也和 ES5 中直接使用 function 定义类的方式相同，所以得出一个结论：class 的方式是 function 方式的语法糖。</p> <h2 id="setters-getters"><a href="#setters-getters" aria-hidden="true" class="header-anchor">#</a> Setters &amp; Getters</h2> <p>对于类中的属性，可以直接在 constructor 中通过 this 直接定义，还可以直接在类的顶层来定义：</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code><span class="token keyword">class</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span> <span class="token punctuation">(</span><span class="token parameter">type<span class="token punctuation">,</span> age</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>type <span class="token operator">=</span> type
+    <span class="token keyword">this</span><span class="token punctuation">.</span>_age <span class="token operator">=</span> age
+  <span class="token punctuation">}</span>
+  <span class="token keyword">get</span> <span class="token function">age</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_age
+  <span class="token punctuation">}</span>
+  <span class="token keyword">set</span> <span class="token function">age</span> <span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>_age <span class="token operator">=</span> val
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这个代码演示了，通过 get/set 来给类定一个属性，不过貌似没有说服力。因为 age 和 _age 都是类的属性，而且是相同的含义这样做感觉没有实际用途。但是如果一个属性是个只读的呢？</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code><span class="token keyword">class</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span> <span class="token punctuation">(</span><span class="token parameter">type</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>type <span class="token operator">=</span> type
+  <span class="token punctuation">}</span>
+  <span class="token keyword">get</span> <span class="token function">addr</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">'北京动物园'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>毋庸赘述，大家都能看出来含义。再来看下如下的应用场景：</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code><span class="token keyword">class</span> <span class="token class-name">CustomHTMLElement</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span> <span class="token punctuation">(</span><span class="token parameter">element</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>element <span class="token operator">=</span> element
+  <span class="token punctuation">}</span>
+  <span class="token keyword">get</span> <span class="token function">html</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>element<span class="token punctuation">.</span>innerHTML
+  <span class="token punctuation">}</span>
+  <span class="token keyword">set</span> <span class="token function">html</span> <span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>element<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> value
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>利用 set/get 实现了对 element.innerHTML 的简单封装。</p> <p>可是，有时候我们真的需要设置一个私有属性(闭包)，然后通过一定的规则来限制对它的修改，利用 set/get就可以轻松实现。</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> #age <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token keyword">class</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">type</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>type <span class="token operator">=</span> type
+  <span class="token punctuation">}</span>
+  <span class="token keyword">get</span> <span class="token function">age</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> #age
+  <span class="token punctuation">}</span>
+  <span class="token keyword">set</span> <span class="token function">age</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>val <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> val <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      #age <span class="token operator">=</span> val
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="static-methods"><a href="#static-methods" aria-hidden="true" class="header-anchor">#</a> Static Methods</h2> <p>静态方法是面向对象最常用的功能，在 ES5 中利用 function 实现的类是这样实现一个静态方法的。</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> <span class="token function-variable function">Animal</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">type</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>type <span class="token operator">=</span> type
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function-variable function">walk</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">I am walking</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+Animal<span class="token punctuation">.</span><span class="token function-variable function">eat</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">food</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">I am eating</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在 ES6 中使用 static 的标记是不是静态方法，代码如下：</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code><span class="token keyword">class</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span> <span class="token punctuation">(</span><span class="token parameter">type</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>type <span class="token operator">=</span> type
+  <span class="token punctuation">}</span>
+  <span class="token function">walk</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">I am walking</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">static</span> <span class="token function">eat</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">I am eating</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="sub-classes"><a href="#sub-classes" aria-hidden="true" class="header-anchor">#</a> Sub Classes</h2> <p>面向对象只所以可以应对复杂的项目实现，很大程度上要归功于继承。如果对继承概念不熟悉的同学，可以自行查询。在 ES5 中怎么实现继承呢？</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code><span class="token comment">// 定义父类</span>
+<span class="token keyword">let</span> <span class="token function-variable function">Animal</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">type</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>type <span class="token operator">=</span> type
+<span class="token punctuation">}</span>
+<span class="token comment">// 定义方法</span>
+<span class="token class-name">Animal</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">walk</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">I am walking</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 定义静态方法</span>
+Animal<span class="token punctuation">.</span><span class="token function-variable function">eat</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">food</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">I am eating</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 定义子类</span>
+<span class="token keyword">let</span> <span class="token function-variable function">Dog</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 初始化父类</span>
+  <span class="token function">Animal</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">'dog'</span><span class="token punctuation">)</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function-variable function">run</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'I can run'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 继承</span>
+<span class="token class-name">Dog</span><span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token class-name">Animal</span><span class="token punctuation">.</span>prototype
+</code></pre></div><p>从代码上看，是不是很繁琐？而且阅读性也较差。再看看 ES6 是怎么解决这些问题的：</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code><span class="token keyword">class</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span> <span class="token punctuation">(</span><span class="token parameter">type</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>type <span class="token operator">=</span> type
+  <span class="token punctuation">}</span>
+  <span class="token function">walk</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">I am walking</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">static</span> <span class="token function">eat</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">I am eating</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Dog</span> <span class="token keyword">extends</span> <span class="token class-name">Animal</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token string">'dog'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">run</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'I can run'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>虽然 ES6 在类的定义上仅是 ES5 定义类的语法糖，但是从开发者的角度而言，开发更有效率了，代码可阅读性大大提升。</p></div> <div class="sticker vuepress-toc"><div class="vuepress-toc-item vuepress-toc-h2 active"><a href="#intro" title="Intro">Intro</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#basic-syntax" title="Basic Syntax">Basic Syntax</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#setters-getters" title="Setters &amp; Getters">Setters &amp; Getters</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#static-methods" title="Static Methods">Static Methods</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#sub-classes" title="Sub Classes">Sub Classes</a></div></div></div></div> <footer class="footer" data-v-0d113134><div class="footer-left-wrap" data-v-0d113134><ul class="contact" data-v-0d113134><li class="contact-item" data-v-0d113134><a href="https://github.com/ulivz" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-0d113134><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github" data-v-0d113134><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" data-v-0d113134></path></svg>
+          
+        </a></li><li class="contact-item" data-v-0d113134><a href="https://twitter.com/_ulivz" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-0d113134><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter" data-v-0d113134><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" data-v-0d113134></path></svg>
+          
+        </a></li></ul></div> <div class="footer-right-wrap" data-v-0d113134><ul class="copyright" data-v-0d113134><li class="copyright-item" data-v-0d113134><a href="https://policies.google.com/privacy?hl=en-US" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-0d113134>Privacy Policy</a></li><li class="copyright-item" data-v-0d113134><a href="/myNewBlog/2019/12/02/%E7%B1%BB/.html" class="nav-link" data-v-0d113134>MIT Licensed | Copyright © 2018-present Vue.js</a></li></ul></div></footer></div><div class="global-ui"></div></div>
+    <script src="/myNewBlog/assets/js/app.ea81de50.js" defer></script><script src="/myNewBlog/assets/js/7.7a14a471.js" defer></script><script src="/myNewBlog/assets/js/5.ea7f276a.js" defer></script><script src="/myNewBlog/assets/js/26.ecf5eee9.js" defer></script>
+  </body>
+</html>
